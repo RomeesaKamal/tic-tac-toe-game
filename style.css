@@ -1,0 +1,158 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #191913;
+  text-align: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  padding-top: 30px;
+  font-size: 80px;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 58vmin;
+  margin-bottom: 20px;
+}
+
+.turn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  width: 52px;
+  height: 52px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.game {
+  position: relative;
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 4px rgba(250, 4, 4, 0.5);
+  font-size: 8vmin;
+  color: #fff;
+  background-color: rgb(206, 68, 50);
+}
+
+.box:hover {
+  cursor: pointer;
+  background-color: rgba(250, 4, 4, 0.5);
+}
+
+#rest-btn {
+  width: 52px;
+  height: 52px;
+  font-size: 1.5rem;
+  background-color: rgb(206, 68, 50);
+  box-shadow: 0 3px 10px rgba(250, 4, 4, 0.5);
+  color: #ffffff;
+  border-radius: 50%;
+  border: none;
+}
+
+#rest-btn:hover {
+  cursor: pointer;
+  background-color: rgba(218, 17, 17, 0.5);
+}
+
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #2e2e28;
+  box-shadow: 0 6px 10px rgba(61, 59, 59, 0.5);
+  color: #ffffff;
+  font-size: larger;
+  border-radius: 50%;
+  border: none;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 2rem;
+}
+
+#msg {
+  color: #fff;
+  font-size: 6vmin;
+  padding-bottom: 20px;
+}
+
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.hide {
+  display: none;
+}
+
+.winning-line-container {
+  position: relative; 
+}
+
+.winning-line {
+  position: absolute;
+  height: 4px;
+  background-color: #fff;
+  transform-origin: left;
+}
+
+@media(max-width: 600px) {
+  h1 {
+    font-size: 50px;
+  }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box {
+    height: 19vmin;
+    width: 19vmin;
+
+  }
+  .game{
+    height: 70vmin;
+    width: 70vmin;
+  }
+
+}
+
+@media(max-width:537px){
+  .game{
+    margin-bottom: 3rem;
+  }
+}
